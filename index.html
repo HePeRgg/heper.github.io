@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет сайта GOКАТАТЬ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, rgba(34, 60, 120, 1), #2a5298);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            
+        }
+        img {
+          max-width: 1200px;
+          width: 50%;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #2a5298;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav li {
+            margin: 0 1.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #a8d0ff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #2a5298;
+        }
+        
+        .about {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .about h2 {
+            color: #2a5298;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            
+              
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/Airbrush-IMAGE-ENHANCER-1764078287048-1764078287048 (1) (1) (1) (1).jpg" class="logo"> 
+        <p class="subtitle">Свобода, скорость и адреналин на снежных склонах</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#safety">Безопасность</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#about">О сноубординге</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Добро пожаловать в мир сноубординга!</h2>
+            <p>Сноубординг - это не просто спорт, это стиль жизни, полный адреналина и свободы. Погрузитесь в мир заснеженных склонов, захватывающих трюков и незабываемых ощущений.</p>
+        </section>
+        
+        <section id="gallery">
+            <h2 style="text-align: center; color: #2a5298; margin-bottom: 2rem;">Галерея сноубординга</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1549887552-cb1072d5f7c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Сноубордист в прыжке">
+                    <div class="card-content">
+                        <h3>Прыжок на склоне</h3>
+                        <p>Захватывающий момент прыжка сноубордиста на заснеженном склоне.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Сноубордист в горах">
+                    <div class="card-content">
+                        <h3>Свобода в горах</h3>
+                        <p>Сноубордист наслаждается свободным катанием в заснеженных горах.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Трюк на сноуборде">
+                    <div class="card-content">
+                        <h3>Экстремальный трюк</h3>
+                        <p>Сложный трюк, выполняемый профессиональным сноубордистом.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1578164253951-b02ecac79d8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Закат на склоне">
+                    <div class="card-content">
+                        <h3>Закатная прогулка</h3>
+                        <p>Сноубордист катается на закате, наслаждаясь красивыми видами.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1549317336-206009e0c0d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Группа сноубордистов">
+                    <div class="card-content">
+                        <h3>Командное катание</h3>
+                        <p>Группа сноубордистов наслаждается катанием вместе.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1551524164-6ca64fb5ebc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Фристайл на сноуборде">
+                    <div class="card-content">
+                        <h3>Фристайл</h3>
+                        <p>Сноубордист выполняет элементы фристайла в сноуборд-парке.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about">
+            <h2>О сноубординге</h2>
+            <p>Сноубординг — олимпийский вид спорта, заключающийся в спуске с заснеженных склонов и гор на специальном снаряде — сноуборде. Изначально зимний вид спорта, хотя отдельные экстремалы освоили его даже летом, катаясь на сноуборде на песчаных склонах (сэндбординг).</p>
+            <p>В сноубординге существует несколько дисциплин:</p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>Слалом — скоростной спуск по трассе с флагами</li>
+                <li>Фристайл — выполнение трюков на специальных трассах</li>
+                <li>Фрирайд — свободное катание по неподготовленным склонам</li>
+                <li>Хафпайп — катание в специальной U-образной рампе</li>
+            </ul>
+            <p style="margin-top: 1rem;">Сноубординг появился в 1960-х годах и с тех пор завоевал огромную популярность по всему миру, став не просто спортом, но и культурным явлением.</p>
+        </section>
+    </div>
+    
+    <footer id="contact">
+        <p>© 2025 Сайт о сноубординге | Все права защищены</p>
+        <p>Контактная информация: info@snowboarding-site.ru</p>
+    </footer>
+</body>
+</html>
